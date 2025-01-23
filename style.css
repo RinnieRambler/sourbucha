@@ -1,0 +1,89 @@
+/* * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+body {
+    color: ;
+}
+
+body *{
+    border-color: initial;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+}
+
+.expandButton span {
+    transition: all 3s;
+  }
+  
+.expandButton.active span{
+    transform: rotate(45deg);
+  }
+  
+
+@layer base {
+
+    h1, h2, h3, h4  {
+        @apply my-[0.75em];
+    }
+  
+    h1 {
+        @apply text-9xl uppercase leading-tight font-sans-bold;
+    }
+    h2 {
+        @apply text-5xl uppercase leading-loose font-sans-bold;
+    }
+    h3 {
+        @apply text-xl uppercase leading-tight font-sans-bold;
+    }
+  
+    h4 {
+        @apply text-lg uppercase leading-tight font-sans-semibold;
+    }
+  
+    p {
+        @apply mb-[0.5em] leading-normal font-sans;
+    }
+  
+    a {
+        @apply font-sans-semibold uppercase;
+    }
+  
+  }
+
+  @layer components {
+
+    .text-light {
+       @apply text-[#f5f0ea];
+    }
+    .bg-light {
+        @apply bg-[#f5f0ea];
+    }
+  
+    .text-darkblue {
+       @apply text-[#192841];
+    }
+  
+    .border-darkblue {
+       @apply border border-[#192841];
+    }
+  
+    .bg-darkblue {
+      @apply bg-[#192841];
+    }
+  }
+
+
+
