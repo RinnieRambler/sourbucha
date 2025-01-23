@@ -2,4 +2,157 @@
 layout: default
 title: Homepage
 ---
-<h1 class="text-4xl font-bold text-green-900">Welcome to your homepage!</h1>
+ <!--------header -------->
+
+ <header class="bg-orange min-h-screen bg-cover bg-center flex flex-col" style="background-image: url(/images/bold-website-assets/banner-orange-new.jpg);">
+  <div class="flex justify-between items-center p-5 text-white">
+      <nav class="flex space-x-10">
+          <a>LOGO</a>
+          <a>nav 1</a>
+          <a>nav 2</a>
+          <a>nav 3</a>
+      </nav>
+      <a class="border-solid border border-inherit rounded-full py-2 px-5">Contact us</a>
+  </div>
+  <div class=" grow flex justify-center items-center text-center">
+      <div>
+          <h1 class="text-8xl text-white max-w-[500px] p-2">This is a heading</h1>
+          <h2 class="p-5">Subheading</h2>
+          <a class="text-white px-6 py-2 bg-black rounded-full">Book now</a>
+      </div>
+  </div>
+  <svg class="rotate-180 w-full relative -bottom-1" viewBox="0 0 2192 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M2192 31.6148C2100.67 31.6148 2100.67 111 2009.31 111C1917.96 111 1917.98 31.6148 1826.63 31.6148C1735.27 31.6148 1735.29 111 1643.96 111C1552.63 111 1552.63 31.6148 1461.29 31.6148C1369.96 31.6148 1369.96 111 1278.63 111C1187.29 111 1187.29 31.6148 1095.96 31.6148C1004.63 31.6148 1004.63 111 913.293 111C821.959 111 821.959 31.6148 730.626 31.6148C639.293 31.6148 639.293 111 547.959 111C456.626 111 456.626 31.6148 365.293 31.6148C273.959 31.6148 273.959 111 182.646 111C91.3333 111 91.3333 31.6148 0 31.6148V0H1096H2192V31.6148Z" fill="#EEC1DC"/>
+      </svg>
+</header>
+
+<!----------Image column grid --------->
+
+<section class="bg-pink p-10">
+  <h2 class="text-center p-5">Duis aute irure</h2>
+  <div class="grid md:grid-cols-3 gap-4 p-10">
+      <div class="">
+          <img class="rounded-b-[4vw] md:rounded-b-[2vw] rounded-t-[40vw] md:rounded-t-[14vw] bg-cover bg-center" src="/images/bold-website-assets/bold-2.jpg" alt="">
+          <p class="text-center py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque molestiae incidunt blanditiis nesciunt. Voluptatibus corporis facere necessitatibus quam pariatur</p>
+      </div>
+      <div>
+          <img class="rounded-b-[2vw] rounded-t-[14vw]" src="/images/bold-website-assets/bold-3.jpg" alt="">
+          <p class="text-center py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque molestiae incidunt blanditiis nesciunt. Voluptatibus corporis facere necessitatibus quam pariatur</p>
+      </div>
+      <div>
+          <img class="rounded-b-[2vw] rounded-t-[14vw]" src="/images/bold-website-assets/bold-4.jpg" alt="">
+          <p class="text-center py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque molestiae incidunt blanditiis nesciunt. Voluptatibus corporis facere necessitatibus quam pariatur </p>
+      </div>
+  </div>
+</section>
+
+<!---------- text and image overlap --------->
+
+<section class="grid grid-cols-3 bg-pink p-10 pl-0 relative">
+  <div class="col-span-2">
+      <img class="rounded-r-full pb-10 md:pb-0" src="/images/bold-website-assets/bold-5.jpg" alt="">
+  </div>
+  <div class="px-10 md:p-20 grid md:grid-cols-2 col-span-full md:absolute h-full">
+      <div></div>
+      <div class="self-center">
+          <h2 class="py-5">Duis aute irure</h2>
+          <p class="py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sequi error ut obcaecati inventore autem, fugiat, ab natus at eius amet. Asperiores, facilis distinctio id possimus porro consequuntur magnam harum.</p>
+          <a class="bg-orange rounded-full py-1 px-9" href="#">Sign up</a>
+      </div>
+  </div>
+</section>
+
+<!---------- text and image --------->
+
+<section class="grid md:grid-cols-2 ">
+  <div class="bg-yellow pt-24 flex">
+      <img class="rounded-t-full px-20 items-end" src="/images/bold-website-assets/bold-6.jpg" alt="">
+  </div>
+  <div class="bg-orange pl-10 pr-20 pb-16 pt-16 md:pt-0 flex items-end ">
+      <div>
+          <h2 class="text-white">Duis aute irure</h2>
+          <p class="py-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit itaque perspiciatis impedit tempore obcaecati quae maiores vitae esse, harum dicta consectetur repellendus saepe unde sequi nobis tenetur iure minima expedita.</p>
+          <a class="bg-pink rounded-full py-1 px-9">Buy now</a>
+      </div>
+  </div>
+</section>
+
+<!---------- gallery --------->
+
+<section class="flex overflow-x-scroll md:grid md:grid-cols-4 gap-6 py-14 bg-pink relative"> 
+      <div class="col-span-2 relative pb-[32%] md:pb-[50%] basis-2/3 shrink-0">
+          <img class="rounded-r-full absolute h-full w-full" src="/images/bold-website-assets/bold-7.jpg" alt="">
+      </div>
+      <div class="relative pb-[64%] md:pb-[100%] basis-2/3 shrink-0">
+          <img class="rounded-full absolute h-full w-full" src="/images/bold-website-assets/bold-8.jpg" alt="">
+      </div>
+      <div class="relative pb-[64%] md:pb-[100%] basis-2/3 shrink-0">
+          <img class="rounded-l-full absolute h-full w-full" src="/images/bold-website-assets/bold-9.jpg" alt="">
+      </div>
+      
+</section>
+
+<!---------- contact section --------->
+
+<section class="bg-orange pt-[14vw] mx-auto relative">
+  <svg class="w-full col-span-full -top-1 absolute" viewBox="0 0 1440 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1816 31.6148C1724.67 31.6148 1724.67 111 1633.31 111C1541.96 111 1541.98 31.6148 1450.63 31.6148C1359.27 31.6148 1359.29 111 1267.96 111C1176.63 111 1176.63 31.6148 1085.29 31.6148C993.959 31.6148 993.959 111 902.626 111C811.293 111 811.293 31.6148 719.959 31.6148C628.626 31.6148 628.626 111 537.293 111C445.959 111 445.959 31.6148 354.626 31.6148C263.293 31.6148 263.293 111 171.959 111C80.6261 111 80.6261 31.6148 -10.7072 31.6148C-102.041 31.6148 -102.041 111 -193.354 111C-284.667 111 -284.667 31.6148 -376 31.6148V0H720H1816V31.6148Z" fill="#EEC1DC"/>
+  </svg>
+  <div class="grid md:grid-cols-2 gap-6 p-20">
+      <div class=" flex justify-center pr-10">
+          <div>
+              <h2 class="">Contact us</h2>
+              <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates corporis officiis iste deserunt doloremque ducimus esse temporibus. Nemo repellendus inventore, explicabo quidem possimus excepturi, architecto numquam, quisquam pariatur earum beatae.</p>
+          </div>
+      </div>
+      <div class="">
+          <form>
+              <label for="name">Name</label>
+              <input class="bg-pink rounded-full py-1 px-2 w-full mb-5" type="text" id="name" name="name">
+              <label for="email">Email</label>
+              <input class="bg-pink rounded-full py-1 px-2 w-full mb-5" type="email" id="email" name="email">
+              <label for="message">Message</label>
+              <input class="bg-pink rounded-lg py-6 px-2 w-full mb-5" type="text" id="message" name="message">
+              <input class="bg-black text-white rounded-full py-1 px-10 ml-auto" type="submit" value="send">
+          </form>
+      </div>
+
+  </div>
+</section>
+
+<!---------- footer --------->
+
+<footer class="grid grid-cols-3 md:grid-cols-5 gap-12 relative bg-pink p-20 pt-[20vw] md:pt-[10vw]">
+  <svg class="w-full absolute" viewBox="0 0 1440 111" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M1816 31.6148C1724.67 31.6148 1724.67 111 1633.31 111C1541.96 111 1541.98 31.6148 1450.63 31.6148C1359.27 31.6148 1359.29 111 1267.96 111C1176.63 111 1176.63 31.6148 1085.29 31.6148C993.959 31.6148 993.959 111 902.626 111C811.293 111 811.293 31.6148 719.959 31.6148C628.626 31.6148 628.626 111 537.293 111C445.959 111 445.959 31.6148 354.626 31.6148C263.293 31.6148 263.293 111 171.959 111C80.6261 111 80.6261 31.6148 -10.7072 31.6148C-102.041 31.6148 -102.041 111 -193.354 111C-284.667 111 -284.667 31.6148 -376 31.6148V0H720H1816V31.6148Z" fill="#FE953D"/>
+      </svg>
+  <div class="flex flex-col">
+      <h4 class="pb-5">Lorem ipsum</h4>
+      <a>Dolor sit amet</a>
+      <a>consecteur</a>
+      <a>adipicing elit</a>
+      <a>sed do</a>
+  </div>
+  <div class="flex flex-col">
+      <h4 class="pb-5">Lorem ipsum</h4>
+      <a>Dolor sit amet</a>
+      <a>consecteur</a>
+      <a>adipicing elit</a>
+      <a>sed do</a>
+  </div>
+  <div class="flex flex-col">
+      <h4 class="pb-5">Lorem ipsum</h4>
+      <a>Dolor sit amet</a>
+      <a>consecteur</a>
+      <a>adipicing elit</a>
+      <a>sed do</a>
+  </div>
+  <div class="col-span-full md:col-span-2">
+      <h4 class="pb-5">Subscribe to our newsletter</h4>
+      <form>
+          <input class="bg-orange rounded-full w-full" type="email" id="email" name="email">
+          <input class="bg-black rounded-full text-white px-6 py-1 mt-5 ml-auto" type="submit" value="subscribe">
+      </form>
+  </div>
+  
+</footer>
